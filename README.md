@@ -1,6 +1,6 @@
 # Cubix
 
-Cubix is a simple, 100% python written, module for computing persistent homology in an alternative way. Given a data cloud *S* of **R**^n, it builds a simplicial cubic complex covering *S* and makes a filtration over this complex using a kernel density estimator (KDE) of *S*.  For a formal definition of the method and the simplicial cubic homology implemented, we redirect the reader to the paper 'Filtraciones cúbicas mediante KDE's para el cálculo de homología persistente' ---writen in Spanish--- available on the Github repository.
+Cubix is a simple, 100% python written, module for computing persistent homology in alternative way. Given a data cloud *S* of **R**^n, it builds a simplicial cubic complex covering *S* and makes a filtration over this complex using a kernel density estimator (KDE) of *S*.  For a formal definition of the method and the simplicial cubic homology implemented, we redirect the reader to the paper 'Filtraciones en homología persistente mediante estimadores kernel de densidad' ---writen in Spanish--- available on the Github repository.
 
 ## Dependencies
 Cubix has very few dependences:
@@ -10,13 +10,13 @@ Cubix has very few dependences:
 
 All of them are available in PyPI.
 
-
 ## Install
 You can easily install Cubix via *pip*:
 ```
 pip install cubix
 ``` 
-## Usage
+
+## Basic usage
 First of all, you must import the module:
 ```python
 import cubix 
@@ -35,16 +35,14 @@ X = cubex.S2(center=(2,1,4), r=5, err=0.1, N=2000)
 ``` 
 For more information about the arguments accepted to instantiate this classes, please read the documentation of each one.
 
-*Cloud* class have some useful methods for plotting the data when possible. The following instruction will plot the points of the data cloud when dimension of the space is between 1 and 3.
+*Cloud* class have some useful methods for plotting (when possible) and exporting data. Take a look at those 3 methods: 
 ```python
 X.plot()
-``` 
-With the next one, you'll be able to see a representation of the KDE of the cloud with the precission you desire:
-```python
 X.kde_plot()
+X.export_to_csv("output.csv")
 ``` 
 
-Once you have your cloud *X*, you can calculate the persistence homology of it. You just have to write:
+Once you have your cloud *X*, you can calculate the persistence homology of it. You just have to create a variable of the class *PersistentHomology* this way:
 ```python
 h = X.persistent_homology()
 ``` 
@@ -54,15 +52,11 @@ h = X.persistent_homology()
  * *pruning* - parameter to cut off the last (the most insignificant) cubes of the filtration in order to make the algorithm faster. Ex: *pruning=0.9* will keep only the 90% most significant cubes. Default: 0 (don't cut off).
  * *verbose* - If *True*, print by standard error the progress of the calculation. Default: False.
 
-Finally, you can see the results in three ways. In a persistence diagram:
+Finally, you can see the results in three ways: a persistence diagram, a bar code or just explicitly printing out all born and death times:
 ```python
 h.persitence_diagram()
-``` 
-In a bar code with:
-```python
 h.bar_code()
-```
-Or explicitly with: 
-```python
 h.detail()
 ```
+
+For more information, please check the documentation in the source code.
