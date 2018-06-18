@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="cubix",
-    version="1.0.1",
+    version="1.0.2",
     author="Martin Campos",
     author_email="tinotinocampos@gmail.com",
     description="Persistent homology for data clouds using KDE",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/doctorfields/Cubex",
+    url="https://github.com/doctorfields/Cubix",
     packages=setuptools.find_packages(),
     classifiers=(
         "Programming Language :: Python :: 2.7",
