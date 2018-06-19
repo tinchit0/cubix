@@ -21,7 +21,7 @@ First of all, you must import the module:
 ```python
 import cubix 
 ``` 
-The second step is choosing the data cloud to analyze. Cubix class *Cloud* for these objects. You can create your cloud importing points from a CSV file just like: 
+The second step is choosing the data cloud to analyze. Cubix class *Cloud* is designed to contain these objects. You can create your cloud importing points from a CSV file just like: 
 ```python
 X = cubex.Cloud(csv="input_file.csv")
 ``` 
@@ -60,3 +60,15 @@ h.detail()
 ```
 
 For more information, please check the documentation in the source code.
+
+
+## Plotter.py
+
+*Plotter.py* is a user-friednly desktop program (developed with PyQt) designed for experimenting with *Cubix* options on 2D or 3D data clouds. You can run it just typing
+```bash
+./Plotter.py
+```
+in any Unix-like computer with *Cubix* installed. Extra dependences may be required (such as PyQt).
+
+
+*This software has been developed as part of the Final Degree Project in Mathematics for Universitat Autònoma de Barcelona (UAB). If you are interested in filtrations using KDE's and you understand Spanish, please take a look at the paper 'Filtraciones en homología persistente mediante estimadores kernel de densidad' available on the Github repository.*
