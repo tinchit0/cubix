@@ -1,0 +1,30 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{1}
+\contentsline {section}{\numberline {2}Homolog\IeC {\'\i }a persistente}{3}
+\contentsline {subsection}{\numberline {2.1}Complejos simpliciales}{5}
+\contentsline {subsubsection}{\numberline {2.1.1}Complejos de \IeC {\v C}ech}{5}
+\contentsline {subsubsection}{\numberline {2.1.2}Complejos de Vietoris-Rips}{6}
+\contentsline {subsubsection}{\numberline {2.1.3}Realizaci\IeC {\'o}n geom\IeC {\'e}trica}{7}
+\contentsline {subsection}{\numberline {2.2}Filtraciones}{9}
+\contentsline {subsubsection}{\numberline {2.2.1}Filtraciones subnivel}{10}
+\contentsline {subsection}{\numberline {2.3}Persistencia}{10}
+\contentsline {subsection}{\numberline {2.4}M\IeC {\'e}todos de representaci\IeC {\'o}n de los resultados}{11}
+\contentsline {subsubsection}{\numberline {2.4.1}Diagramas de persistencia}{11}
+\contentsline {subsubsection}{\numberline {2.4.2}C\IeC {\'o}digos de barras}{13}
+\contentsline {section}{\numberline {3}Homolog\IeC {\'\i }a c\IeC {\'u}bica simplicial}{15}
+\contentsline {subsection}{\numberline {3.1}Cubos simpliciales}{15}
+\contentsline {subsection}{\numberline {3.2}Complejos c\IeC {\'u}bicos}{17}
+\contentsline {subsection}{\numberline {3.3}Frontera y morfismos diferenciales}{19}
+\contentsline {subsection}{\numberline {3.4}Grupos de homolog\IeC {\'\i }a de un complejo c\IeC {\'u}bico}{21}
+\contentsline {subsection}{\numberline {3.5}Equivalencia de la homolog\IeC {\'\i }a c\IeC {\'u}bica}{22}
+\contentsline {subsubsection}{\numberline {3.5.1}Triangulaci\IeC {\'o}n del $m$-cubo}{22}
+\contentsline {subsubsection}{\numberline {3.5.2}Morfismo de triangulaci\IeC {\'o}n}{26}
+\contentsline {subsubsection}{\numberline {3.5.3}Teorema de comparaci\IeC {\'o}n de la homolog\IeC {\'\i }a c\IeC {\'u}bica}{29}
+\contentsline {section}{\numberline {4}Filtraciones mediante KDE}{35}
+\contentsline {subsection}{\numberline {4.1}Estimadores kernel de densidad (KDE)}{35}
+\contentsline {subsection}{\numberline {4.2}Filtraciones mediante KDE. Formalizaci\IeC {\'o}n}{36}
+\contentsline {section}{\numberline {5}Implementaci\IeC {\'o}n}{39}
+\contentsline {subsection}{\numberline {5.1}Uso del software desarrollado}{39}
+\contentsline {subsection}{\numberline {5.2}Algoritmo de c\IeC {\'a}lculo de homolog\IeC {\'\i }a persistente}{42}
+\contentsline {subsection}{\numberline {5.3}KDE utilizado}{44}
+\contentsline {section}{\numberline {6}Conclusiones}{47}

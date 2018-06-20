@@ -1,0 +1,1450 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.3)  20 JUN 2018 02:13
+entering extended mode
+**./memoria.tex
+(memoria.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\articl
+e.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12
+.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inpute
+nc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf8.d
+ef"
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.
+dfu"
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1enc
+.dfu"
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omsenc
+.dfu"
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fonten
+c.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.
+def"
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\bab
+el.sty"
+Package: babel 2018/02/14 3.18 The Babel package
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\swi
+tch.def"
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblop
+ts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-spani
+sh\spanish.ldf"
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\bab
+el.def"
+File: babel.def 2018/02/14 3.18 Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txt
+babel.def")
+\bbl@dirlevel=\count88
+)
+\es@quottoks=\toks16
+\es@quotdepth=\count89
+Package babel Info: Making " an active character on input line 561.
+Package babel Info: Making . an active character on input line 662.
+Package babel Info: Making < an active character on input line 707.
+Package babel Info: Making > an active character on input line 707.
+))
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\ams
+math.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\ams
+text.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\ams
+gen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen104
+))
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\ams
+bsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\ams
+opn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
+\dotsspace@=\muskip10
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks18
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks19
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\enume
+rate.sty"
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks22
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\gr
+aphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\ke
+yval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\gr
+aphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\tr
+ig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cf
+g\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-de
+f\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\co
+lor.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cf
+g\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\soul\soul.s
+ty"
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks24
+\SOUL@lasttoken=\toks25
+\SOUL@cmds=\toks26
+\SOUL@buffer=\toks27
+\SOUL@token=\toks28
+\SOUL@spaceskip=\skip46
+\SOUL@ttwidth=\dimen115
+\SOUL@uldp=\dimen116
+\SOUL@ulht=\dimen117
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\am
+ssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\am
+sfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amst
+hm.sty"
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks29
+\thm@bodyfont=\toks30
+\thm@headfont=\toks31
+\thm@notefont=\toks32
+\thm@headpunct=\toks33
+\thm@preskip=\skip47
+\thm@postskip=\skip48
+\thm@headsep=\skip49
+\dth@everypar=\toks34
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\placeins\pl
+aceins.sty"
+Package: placeins 2005/04/18  v 2.2
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xy.
+sty"
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xy.
+tex" Bootstrap'ing: catcodes, docmode,
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyr
+ecat.tex")
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyi
+dioms.tex")
+
+ Xy-pic version 3.8.9 <2013/10/06>
+ Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
+ Xy-pic is free software: see the User's Guide for details.
+
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen118
+\Y@c=\dimen119
+\U@c=\dimen120
+\D@c=\dimen121
+\L@c=\dimen122
+\R@c=\dimen123
+\Edge@c=\toks35
+\X@p=\dimen124
+\Y@p=\dimen125
+\U@p=\dimen126
+\D@p=\dimen127
+\L@p=\dimen128
+\R@p=\dimen129
+\Edge@p=\toks36
+\X@origin=\dimen130
+\Y@origin=\dimen131
+\X@xbase=\dimen132
+\Y@xbase=\dimen133
+\X@ybase=\dimen134
+\Y@ybase=\dimen135
+\X@min=\dimen136
+\Y@min=\dimen137
+\X@max=\dimen138
+\Y@max=\dimen139
+\lastobjectbox@=\box28
+\zerodotbox@=\box29
+\almostz@=\dimen140
+ direction,
+\d@X=\dimen141
+\d@Y=\dimen142
+\K@=\count102
+\KK@=\count103
+\Direction=\count104
+\K@dXdY=\dimen143
+\K@dYdX=\dimen144
+\xyread@=\read1
+\xywrite@=\write3
+\csp@=\count105
+\quotPTK@=\dimen145
+
+utility macros; pictures: \xy, positions,
+\swaptoks@@=\toks37
+\connectobjectbox@@=\box30
+ objects,
+\styletoks@=\toks38
+ decorations;
+kernel objects: directionals, circles, text; options; algorithms: directions,
+edges, connections;  Xy-pic loaded)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\
+ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package: xy 2013/10/06 Xy-pic version 3.8.9
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xya
+ll.tex"  Xy-pic option: All features v.3.8
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyc
+urve.tex"  Xy-pic option: Curve and Spline extension v.3.12 curve,
+\crv@cnt@=\count106
+\crvpts@=\toks39
+\splinebox@=\box31
+\splineval@=\dimen146
+\splinedepth@=\dimen147
+\splinetol@=\dimen148
+\splinelength@=\dimen149
+ circles,
+\L@=\dimen150
+
+loaded)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyf
+rame.tex"  Xy-pic option: Frame and Bracket extension v.3.14 loaded)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyc
+mtip.tex"  Xy-pic option: Computer Modern tip extension v.3.7
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyt
+ips.tex"  Xy-pic option: More Tips extension v.3.11 loaded) loaded)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyl
+ine.tex"  Xy-pic option: Line styles extension v.3.10
+\xylinethick@=\dimen151
+ loaded)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyr
+otate.tex"  Xy-pic option: Rotate and Scale extension v.3.8 loaded)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyc
+olor.tex"  Xy-pic option: Colour extension v.3.11 loaded)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xym
+atrix.tex"  Xy-pic option: Matrix feature v.3.14
+\Row=\count107
+\Col=\count108
+\queue@=\toks40
+\queue@@=\toks41
+\qcount@=\count109
+\qcount@@=\count110
+\matrixsize@=\count111
+ loaded)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xya
+rrow.tex"  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyg
+raph.tex"  Xy-pic option: Graph feature v.3.11 loaded) loaded)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyp
+df.tex"  Xy-pic option: PDF driver v.1.7
+Xy-pic pdf driver: `color' extension support
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyp
+df-co.tex" loaded) Xy-pic pdf driver: `curve' extension support
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyp
+df-cu.tex" loaded) Xy-pic pdf driver: `frame' extension support
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyp
+df-fr.tex" loaded) Xy-pic pdf driver: `line' extension support
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyp
+df-li.tex" loaded) Xy-pic pdf driver: `rotate' extension support
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyp
+df-ro.tex" loaded) loaded))
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\li
+stings.sty"
+\lst@mode=\count112
+\lst@gtempboxa=\box32
+\lst@token=\toks42
+\lst@length=\count113
+\lst@currlwidth=\dimen152
+\lst@column=\count114
+\lst@pos=\count115
+\lst@lostspace=\dimen153
+\lst@width=\dimen154
+\lst@newlines=\count116
+\lst@lineno=\count117
+\lst@maxwidth=\dimen155
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\ls
+tmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count118
+\lst@skipnumbers=\count119
+\lst@framebox=\box33
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\li
+stings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\bm.st
+y"
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fa
+ncyhdr.sty"
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip50
+\f@nch@O@elh=\skip51
+\f@nch@O@erh=\skip52
+\f@nch@O@olh=\skip53
+\f@nch@O@orh=\skip54
+\f@nch@O@elf=\skip55
+\f@nch@O@erf=\skip56
+\f@nch@O@olf=\skip57
+\f@nch@O@orf=\skip58
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\math
+pazo.sty"
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup9
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tocloft\toc
+loft.sty"
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip59
+\cftbeforetoctitleskip=\skip60
+\cftaftertoctitleskip=\skip61
+\cftbeforepartskip=\skip62
+\cftpartnumwidth=\skip63
+\cftpartindent=\skip64
+\cftbeforesecskip=\skip65
+\cftsecindent=\skip66
+\cftsecnumwidth=\skip67
+\cftbeforesubsecskip=\skip68
+\cftsubsecindent=\skip69
+\cftsubsecnumwidth=\skip70
+\cftbeforesubsubsecskip=\skip71
+\cftsubsubsecindent=\skip72
+\cftsubsubsecnumwidth=\skip73
+\cftbeforeparaskip=\skip74
+\cftparaindent=\skip75
+\cftparanumwidth=\skip76
+\cftbeforesubparaskip=\skip77
+\cftsubparaindent=\skip78
+\cftsubparanumwidth=\skip79
+\cftbeforeloftitleskip=\skip80
+\cftafterloftitleskip=\skip81
+\cftbeforefigskip=\skip82
+\cftfigindent=\skip83
+\cftfignumwidth=\skip84
+\c@lofdepth=\count120
+\c@lotdepth=\count121
+\cftbeforelottitleskip=\skip85
+\cftafterlottitleskip=\skip86
+\cftbeforetabskip=\skip87
+\cfttabindent=\skip88
+\cfttabnumwidth=\skip89
+)
+\c@proposicion=\count122
+\c@lema=\count123
+\c@teorema=\count124
+\c@corolario=\count125
+\c@definicion=\count126
+\c@observacion=\count127
+\c@ejemplo=\count128
+ (memoria.aux
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+)
+\openout1 = `memoria.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 69.
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pp
+l.fd"
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+LaTeX Info: Redefining \. on input line 69.
+LaTeX Info: Redefining \% on input line 69.
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp
+-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count129
+\scratchdimen=\dimen156
+\scratchbox=\box34
+\nofMPsegments=\count130
+\nofMParguments=\count131
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen157
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
+\everyMPtoPDFconversion=\toks44
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\ep
+stopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\
+infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\gr
+fext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\
+kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\
+ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kv
+options.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\
+kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\
+etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\
+ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\
+pdftexcmds.sty"
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 69.
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1p
+pl.fd"
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 69.
+
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlz
+plm.fd"
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 69.
+
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsz
+plm.fd"
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 69.
+
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxz
+plm.fd"
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 69.
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\um
+sa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 69.
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\um
+sb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 69.
+
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1z
+plm.fd"
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+Package xypdf Info: Line width: 0.48pt on input line 69.
+\c@lstlisting=\count135
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 100.
+<img/uabnegro.png, id=1, 1229.59375pt x 569.12625pt>
+File: img/uabnegro.png Graphic file (type png)
+<use img/uabnegro.png>
+Package pdftex.def Info: img/uabnegro.png  used on input line 134.
+(pdftex.def)             Requested size: 368.88097pt x 170.73918pt.
+ [1
+
+{C:/Users/Martu Campos/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./im
+g/uabnegro.png>] [2] (memoria.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 2.
+)
+\tf@toc=\write4
+\openout4 = `memoria.toc'.
+
+ [3] [4]
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 172
+.
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ufpl
+mbb.fd"
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+)
+LaTeX Info: Redefining \. on input line 176.
+LaTeX Info: Redefining \% on input line 176.
+ [1
+
+] [2]
+<img/cloud002.png, id=27, 613.0905pt x 412.9026pt>
+File: img/cloud002.png Graphic file (type png)
+<use img/cloud002.png>
+Package pdftex.def Info: img/cloud002.png  used on input line 194.
+(pdftex.def)             Requested size: 153.27225pt x 103.22539pt.
+<img/cloud152.png, id=28, 613.0905pt x 412.9026pt>
+File: img/cloud152.png Graphic file (type png)
+<use img/cloud152.png>
+Package pdftex.def Info: img/cloud152.png  used on input line 195.
+(pdftex.def)             Requested size: 153.27225pt x 103.22539pt.
+<img/cloud252.png, id=29, 613.0905pt x 412.9026pt>
+File: img/cloud252.png Graphic file (type png)
+<use img/cloud252.png>
+Package pdftex.def Info: img/cloud252.png  used on input line 196.
+(pdftex.def)             Requested size: 153.27225pt x 103.22539pt.
+<img/cloud402.png, id=30, 613.0905pt x 412.9026pt>
+File: img/cloud402.png Graphic file (type png)
+<use img/cloud402.png>
+Package pdftex.def Info: img/cloud402.png  used on input line 197.
+(pdftex.def)             Requested size: 153.27225pt x 103.22539pt.
+LaTeX Info: Redefining \. on input line 203.
+LaTeX Info: Redefining \% on input line 203.
+ [3 <./img/cloud002.png> <./img/cloud152.png> <./img/cloud252.png> <./img/cloud
+402.png>]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 208.
+
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt
+.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 212.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+LaTeX Info: Redefining \. on input line 233.
+LaTeX Info: Redefining \% on input line 233.
+LaTeX Info: Redefining \. on input line 233.
+LaTeX Info: Redefining \% on input line 233.
+
+[5] [6]
+LaTeX Info: Redefining \. on input line 287.
+LaTeX Info: Redefining \% on input line 287.
+LaTeX Info: Redefining \. on input line 287.
+LaTeX Info: Redefining \% on input line 287.
+ [7]
+<img/puntos.png, id=57, 448.7967pt x 256.3176pt>
+File: img/puntos.png Graphic file (type png)
+<use img/puntos.png>
+Package pdftex.def Info: img/puntos.png  used on input line 292.
+(pdftex.def)             Requested size: 175.03pt x 99.96346pt.
+<img/cech_bolas2.png, id=58, 448.7967pt x 302.0886pt>
+File: img/cech_bolas2.png Graphic file (type png)
+<use img/cech_bolas2.png>
+Package pdftex.def Info: img/cech_bolas2.png  used on input line 293.
+(pdftex.def)             Requested size: 179.51549pt x 120.83328pt.
+<img/cech_complex.png, id=59, 408.0846pt x 274.626pt>
+File: img/cech_complex.png Graphic file (type png)
+<use img/cech_complex.png>
+Package pdftex.def Info: img/cech_complex.png  used on input line 294.
+(pdftex.def)             Requested size: 163.23094pt x 109.84845pt.
+<img/vietorisrips.png, id=60, 408.0846pt x 274.626pt>
+File: img/vietorisrips.png Graphic file (type png)
+<use img/vietorisrips.png>
+Package pdftex.def Info: img/vietorisrips.png  used on input line 295.
+(pdftex.def)             Requested size: 163.23094pt x 109.84845pt.
+
+Overfull \hbox (0.81007pt too wide) in paragraph at lines 302--303
+[]\T1/ppl/m/n/12 En am-bos ca-sos, la ho-mo-lo-gía sim-pli-cial abs-trac-ta del
+ com-ple-jo de ƒech
+ []
+
+
+Underfull \vbox (badness 3098) has occurred while \output is active []
+
+ [8 <./img/puntos.png> <./img/cech_bolas2.png> <./img/cech_complex.png> <./img/
+vietorisrips.png>]
+<img/figure_2.png, id=68, 578.16pt x 433.62pt>
+File: img/figure_2.png Graphic file (type png)
+<use img/figure_2.png>
+Package pdftex.def Info: img/figure_2.png  used on input line 317.
+(pdftex.def)             Requested size: 161.8837pt x 121.41277pt.
+<img/figure_3.png, id=69, 578.16pt x 433.62pt>
+File: img/figure_3.png Graphic file (type png)
+<use img/figure_3.png>
+Package pdftex.def Info: img/figure_3.png  used on input line 318.
+(pdftex.def)             Requested size: 161.8837pt x 121.41277pt.
+<img/figure_4.png, id=70, 578.16pt x 433.62pt>
+File: img/figure_4.png Graphic file (type png)
+<use img/figure_4.png>
+Package pdftex.def Info: img/figure_4.png  used on input line 319.
+(pdftex.def)             Requested size: 161.8837pt x 121.41277pt.
+<img/figure_5.png, id=71, 578.16pt x 433.62pt>
+File: img/figure_5.png Graphic file (type png)
+<use img/figure_5.png>
+Package pdftex.def Info: img/figure_5.png  used on input line 320.
+(pdftex.def)             Requested size: 161.8837pt x 121.41277pt.
+LaTeX Info: Redefining \. on input line 328.
+LaTeX Info: Redefining \% on input line 328.
+LaTeX Info: Redefining \. on input line 328.
+LaTeX Info: Redefining \% on input line 328.
+ [9 <./img/figure_2.png> <./img/figure_3.png> <./img/figure_4.png> <./img/figur
+e_5.png>]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 343.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 343.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 343.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 343.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 343.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 343.
+ [10]
+LaTeX Info: Redefining \. on input line 371.
+LaTeX Info: Redefining \% on input line 371.
+LaTeX Info: Redefining \. on input line 371.
+LaTeX Info: Redefining \% on input line 371.
+ [11]
+<img/persistence0.png, id=86, 578.16pt x 433.62pt>
+File: img/persistence0.png Graphic file (type png)
+<use img/persistence0.png>
+Package pdftex.def Info: img/persistence0.png  used on input line 374.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+<img/persistencediagram.png, id=87, 578.16pt x 433.62pt>
+File: img/persistencediagram.png Graphic file (type png)
+<use img/persistencediagram.png>
+Package pdftex.def Info: img/persistencediagram.png  used on input line 375.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+<img/s1vs1.png, id=88, 578.16pt x 433.62pt>
+File: img/s1vs1.png Graphic file (type png)
+<use img/s1vs1.png>
+Package pdftex.def Info: img/s1vs1.png  used on input line 384.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+<img/cubex_diagram.png, id=89, 578.16pt x 433.62pt>
+File: img/cubex_diagram.png Graphic file (type png)
+<use img/cubex_diagram.png>
+Package pdftex.def Info: img/cubex_diagram.png  used on input line 385.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12 <./img/persistence0.png> <./img/persistencediagram.png>]
+<img/bars0.png, id=95, 578.16pt x 433.62pt>
+File: img/bars0.png Graphic file (type png)
+<use img/bars0.png>
+Package pdftex.def Info: img/bars0.png  used on input line 397.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+<img/bars.png, id=96, 578.16pt x 433.62pt>
+File: img/bars.png Graphic file (type png)
+<use img/bars.png>
+Package pdftex.def Info: img/bars.png  used on input line 398.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 404.
+LaTeX Info: Redefining \% on input line 404.
+LaTeX Info: Redefining \. on input line 404.
+LaTeX Info: Redefining \% on input line 404.
+[13 <./img/s1vs1.png> <./img/cubex_diagram.png>] [14 <./img/bars0.png> <./img/b
+ars.png>]
+Overfull \hbox (2.19449pt too wide) in paragraph at lines 416--417
+\OML/zplm/m/it/12 m$\T1/ppl/m/n/12 -cubos ---puntos, seg-men-tos, cua-dra-dos, 
+cu-bos e hi-per-cu-bos en general---
+ []
+
+
+Overfull \hbox (15.34148pt too wide) in paragraph at lines 425--426
+[]\T1/ppl/b/n/12 Definición 3.1.1. []\T1/ppl/m/n/12 Fi-ja-mos $\OML/zplm/m/it/1
+2 " > \OT1/ppl/m/n/12 0$\T1/ppl/m/n/12 . Sea $\OML/zplm/m/it/12 P \OT1/zplm/m/n
+/12 = (\OML/zplm/m/it/12 x[]\OT1/ppl/m/n/12 , [] , \OML/zplm/m/it/12 x[]\OT1/zp
+lm/m/n/12 ) \OMS/zplm/m/n/12 2 \U/fplmbb/m/n/12 R[]$ \T1/ppl/m/n/12 y $\OML/zpl
+m/m/it/12 D \OT1/zplm/m/n/12 = \OMS/zplm/m/n/12 f\OML/zplm/m/it/12 d[]\OT1/ppl/
+m/n/12 , [] , \OML/zplm/m/it/12 d[]\OMS/zplm/m/n/12 g$
+ []
+
+LaTeX Info: Redefining \. on input line 432.
+LaTeX Info: Redefining \% on input line 432.
+[15]
+<img/cubos.png, id=111, 519.1395pt x 340.6326pt>
+File: img/cubos.png Graphic file (type png)
+<use img/cubos.png>
+Package pdftex.def Info: img/cubos.png  used on input line 438.
+(pdftex.def)             Requested size: 311.48608pt x 204.38113pt.
+ [16 <./img/cubos.png>]
+<img/cubos3d.png, id=116, 513.117pt x 338.2236pt>
+File: img/cubos3d.png Graphic file (type png)
+<use img/cubos3d.png>
+Package pdftex.def Info: img/cubos3d.png  used on input line 456.
+(pdftex.def)             Requested size: 307.87257pt x 202.93573pt.
+LaTeX Info: Redefining \. on input line 467.
+LaTeX Info: Redefining \% on input line 467.
+LaTeX Info: Redefining \. on input line 467.
+LaTeX Info: Redefining \% on input line 467.
+ [17 <./img/cubos3d.png (PNG copy)>] [18]
+Overfull \hbox (2.62836pt too wide) in paragraph at lines 513--514
+\T1/ppl/m/n/12 de-fi-ne el \T1/ppl/m/it/12 gru-po de ca-de-nas $\OML/zplm/m/it/
+12 p$\T1/ppl/m/it/12 -dimensionales \T1/ppl/m/n/12 de $\OML/zplm/m/it/12 K$\T1/
+ppl/m/n/12 , que de-no-ta-mos por $\OML/zplm/m/it/12 Q[]\OT1/zplm/m/n/12 (\OML/
+zplm/m/it/12 K\OT1/ppl/m/n/12 ; \OML/zplm/m/it/12 R\OT1/zplm/m/n/12 )$
+ []
+
+LaTeX Info: Redefining \. on input line 528.
+LaTeX Info: Redefining \% on input line 528.
+LaTeX Info: Redefining \. on input line 528.
+LaTeX Info: Redefining \% on input line 528.
+[19]
+Overfull \hbox (9.76138pt too wide) in paragraph at lines 541--542
+[]\T1/ppl/m/n/12 La fron-te-ra de un $\OML/zplm/m/it/12 m$\T1/ppl/m/n/12 -cubo 
+pue-de ex-ten-der-se a un mor-fis-mo de $\OML/zplm/m/it/12 R$\T1/ppl/m/n/12 -mó
+dulos
+ []
+
+[20]
+LaTeX Info: Redefining \. on input line 586.
+LaTeX Info: Redefining \% on input line 586.
+LaTeX Info: Redefining \. on input line 586.
+LaTeX Info: Redefining \% on input line 586.
+ [21]
+<img/triangulacioncuadrado.png, id=134, 621.7629pt x 408.0846pt>
+File: img/triangulacioncuadrado.png Graphic file (type png)
+<use img/triangulacioncuadrado.png>
+Package pdftex.def Info: img/triangulacioncuadrado.png  used on input line 608.
+
+(pdftex.def)             Requested size: 248.70074pt x 163.23094pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[22]
+Overfull \hbox (49.71422pt too wide) in paragraph at lines 618--619
+\T1/ppl/m/n/12 coor-de-na-da y lue-go la se-gun-da, re-sul-tan-do el sím-plex $
+\OT1/zplm/m/n/12 [(\OT1/ppl/m/n/12 0, 0\OT1/zplm/m/n/12 )\OT1/ppl/m/n/12 , \OT1
+/zplm/m/n/12 (\OT1/ppl/m/n/12 1, 0\OT1/zplm/m/n/12 )\OT1/ppl/m/n/12 , \OT1/zplm
+/m/n/12 (\OT1/ppl/m/n/12 1, 1\OT1/zplm/m/n/12 )]$\T1/ppl/m/n/12 . 
+ []
+
+<img/triangulacioncubo.png, id=138, 1010.3346pt x 606.3453pt>
+File: img/triangulacioncubo.png Graphic file (type png)
+<use img/triangulacioncubo.png>
+Package pdftex.def Info: img/triangulacioncubo.png  used on input line 636.
+(pdftex.def)             Requested size: 303.10272pt x 181.90498pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 642.
+LaTeX Info: Redefining \% on input line 642.
+LaTeX Info: Redefining \. on input line 642.
+LaTeX Info: Redefining \% on input line 642.
+[23 <./img/triangulacioncuadrado.png>] [24 <./img/triangulacioncubo.png (PNG co
+py)>]
+Overfull \hbox (7.24841pt too wide) in paragraph at lines 675--676
+[]\T1/ppl/b/n/12 Observación 3.5.2. []\T1/ppl/m/n/12 La pro-po-si-ción an-te-ri
+or nos da la in-clu-sión $\OT1/zplm/m/n/12   \OMS/zplm/m/n/12  [[]\OT1/zplm/m/
+n/12 []$
+ []
+
+LaTeX Info: Redefining \. on input line 691.
+LaTeX Info: Redefining \% on input line 691.
+LaTeX Info: Redefining \. on input line 691.
+LaTeX Info: Redefining \% on input line 691.
+[25] <xymatrix 5x2 465> [26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 748.
+LaTeX Info: Redefining \% on input line 748.
+LaTeX Info: Redefining \. on input line 748.
+LaTeX Info: Redefining \% on input line 748.
+ [27]
+[28]
+LaTeX Info: Redefining \. on input line 790.
+LaTeX Info: Redefining \% on input line 790.
+LaTeX Info: Redefining \. on input line 790.
+LaTeX Info: Redefining \% on input line 790.
+ [29] [30]
+Overfull \hbox (5.97882pt too wide) in paragraph at lines 806--807
+[]\T1/ppl/m/n/12 Haremos una pri-me-ra in-duc-ción so-bre la di-men-sión del co
+m-
+ []
+
+<xymatrix 5x1 165> <xymatrix 5x1 165> <xymatrix 5x2 451> <xymatrix 7x2 671>
+Overfull \hbox (4.02708pt too wide) detected at line 837
+[]
+ []
+
+LaTeX Info: Redefining \. on input line 837.
+LaTeX Info: Redefining \% on input line 837.
+LaTeX Info: Redefining \. on input line 837.
+LaTeX Info: Redefining \% on input line 837.
+[31] <xymatrix 7x2 671> <xymatrix 4x2 280> [32]
+LaTeX Info: Redefining \. on input line 874.
+LaTeX Info: Redefining \% on input line 874.
+LaTeX Info: Redefining \. on input line 874.
+LaTeX Info: Redefining \% on input line 874.
+ [33] [34]
+<img/cloudzoom.png, id=183, 288.3272pt x 316.93407pt>
+File: img/cloudzoom.png Graphic file (type png)
+<use img/cloudzoom.png>
+Package pdftex.def Info: img/cloudzoom.png  used on input line 897.
+(pdftex.def)             Requested size: 129.74603pt x 142.619pt.
+<img/kdezoom.png, id=184, 283.0575pt x 316.18124pt>
+File: img/kdezoom.png Graphic file (type png)
+<use img/kdezoom.png>
+Package pdftex.def Info: img/kdezoom.png  used on input line 898.
+(pdftex.def)             Requested size: 127.37468pt x 142.28024pt.
+LaTeX Info: Redefining \. on input line 904.
+LaTeX Info: Redefining \% on input line 904.
+ [35
+
+ <./img/cloudzoom.png> <./img/kdezoom.png>]
+<img/grid.png, id=190, 368.1253pt x 390.70969pt>
+File: img/grid.png Graphic file (type png)
+<use img/grid.png>
+Package pdftex.def Info: img/grid.png  used on input line 919.
+(pdftex.def)             Requested size: 165.65485pt x 175.81773pt.
+<img/complexandcloud.png, id=191, 368.1253pt x 386.94562pt>
+File: img/complexandcloud.png Graphic file (type png)
+<use img/complexandcloud.png>
+Package pdftex.def Info: img/complexandcloud.png  used on input line 920.
+(pdftex.def)             Requested size: 165.65485pt x 174.12392pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[36]
+<img/f1.png, id=195, 367.3725pt x 392.21532pt>
+File: img/f1.png Graphic file (type png)
+<use img/f1.png>
+Package pdftex.def Info: img/f1.png  used on input line 938.
+(pdftex.def)             Requested size: 121.23329pt x 129.43144pt.
+<img/f2.png, id=196, 365.11406pt x 390.70969pt>
+File: img/f2.png Graphic file (type png)
+<use img/f2.png>
+Package pdftex.def Info: img/f2.png  used on input line 939.
+(pdftex.def)             Requested size: 120.488pt x 128.93459pt.
+<img/f3.png, id=197, 367.3725pt x 386.94562pt>
+File: img/f3.png Graphic file (type png)
+<use img/f3.png>
+Package pdftex.def Info: img/f3.png  used on input line 940.
+(pdftex.def)             Requested size: 121.23329pt x 127.69244pt.
+<img/f4.png, id=198, 365.86688pt x 390.70969pt>
+File: img/f4.png Graphic file (type png)
+<use img/f4.png>
+Package pdftex.def Info: img/f4.png  used on input line 941.
+(pdftex.def)             Requested size: 120.73643pt x 128.93459pt.
+<img/f5.png, id=199, 362.85562pt x 393.72093pt>
+File: img/f5.png Graphic file (type png)
+<use img/f5.png>
+Package pdftex.def Info: img/f5.png  used on input line 942.
+(pdftex.def)             Requested size: 119.74272pt x 129.9283pt.
+<img/f6.png, id=200, 366.61969pt x 391.4625pt>
+File: img/f6.png Graphic file (type png)
+<use img/f6.png>
+Package pdftex.def Info: img/f6.png  used on input line 943.
+(pdftex.def)             Requested size: 120.98486pt x 129.18301pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 949.
+LaTeX Info: Redefining \% on input line 949.
+LaTeX Info: Redefining \. on input line 949.
+LaTeX Info: Redefining \% on input line 949.
+[37 <./img/grid.png> <./img/complexandcloud.png>] [38 <./img/f1.png> <./img/f2.
+png> <./img/f3.png> <./img/f4.png> <./img/f5.png> <./img/f6.png>]
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\ls
+tlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\ls
+tlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\ls
+tlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+LaTeX Info: Redefining \. on input line 987.
+LaTeX Info: Redefining \% on input line 987.
+ [39]
+<img/t2.png, id=219, 578.16pt x 433.62pt>
+File: img/t2.png Graphic file (type png)
+<use img/t2.png>
+Package pdftex.def Info: img/t2.png  used on input line 1002.
+(pdftex.def)             Requested size: 317.98898pt x 238.49173pt.
+ [40 <./img/t2.png>]
+Overfull \hbox (6.00403pt too wide) in paragraph at lines 1022--1023
+[][][][][][][][][][][][][][][][][] 
+ []
+
+<img/s2diagram.png, id=224, 578.16pt x 433.62pt>
+File: img/s2diagram.png Graphic file (type png)
+<use img/s2diagram.png>
+Package pdftex.def Info: img/s2diagram.png  used on input line 1030.
+(pdftex.def)             Requested size: 173.44933pt x 130.087pt.
+<img/s2barcode.png, id=225, 578.16pt x 433.62pt>
+File: img/s2barcode.png Graphic file (type png)
+<use img/s2barcode.png>
+Package pdftex.def Info: img/s2barcode.png  used on input line 1031.
+(pdftex.def)             Requested size: 173.44933pt x 130.087pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 1039.
+LaTeX Info: Redefining \% on input line 1039.
+LaTeX Info: Redefining \. on input line 1039.
+LaTeX Info: Redefining \% on input line 1039.
+[41] [42 <./img/s2diagram.png> <./img/s2barcode.png>]
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 1060
+.
+
+("C:\Users\Martu Campos\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsp
+pl.fd"
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1060.
+
+LaTeX Info: Redefining \. on input line 1062.
+LaTeX Info: Redefining \% on input line 1062.
+LaTeX Info: Redefining \. on input line 1062.
+LaTeX Info: Redefining \% on input line 1062.
+ [43] [44]
+LaTeX Info: Redefining \. on input line 1096.
+LaTeX Info: Redefining \% on input line 1096.
+LaTeX Info: Redefining \. on input line 1096.
+LaTeX Info: Redefining \% on input line 1096.
+ [45] [46]
+LaTeX Info: Redefining \. on input line 1118.
+LaTeX Info: Redefining \% on input line 1118.
+ [47] [48]
+Overfull \hbox (3.43477pt too wide) in paragraph at lines 1146--1151
+\T1/ppl/m/n/12 https://cran.r-project.org/web/packages/kedd/vignettes/kedd.pdf 
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1153--1156
+\T1/ppl/m/n/12 http://www.math.uchicago.edu/~shmuel/AAT-readings/Data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1174
+
+ []
+
+LaTeX Info: Redefining \. on input line 1188.
+LaTeX Info: Redefining \% on input line 1188.
+LaTeX Info: Redefining \. on input line 1188.
+LaTeX Info: Redefining \% on input line 1188.
+[49] [50] (memoria.aux
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+) ) 
+Here is how much of TeX's memory you used:
+ 9694 strings out of 493305
+ 128173 string characters out of 3126756
+ 265287 words of memory out of 3000000
+ 12923 multiletter control sequences out of 15000+200000
+ 62461 words of font info for 156 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,16n,51p,3265b,1162s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Martu Campos\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\ectt1000.pk> <C:\Users\Martu Campos\AppData\Local\MiKTeX\2.9\fonts\pk\l
+jfour\jknappen\ec\dpi600\ectt1200.pk>{C:/Users/Martu Campos/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/Martu Campos/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Martu 
+Campos/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.p
+fb><C:/Users/Martu Campos/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmex10.pfb><C:/Users/Martu Campos/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Martu Campos/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Martu C
+ampos/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb><C:/Users/Martu Campos/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+mathpazo/fplmbb.pfb><C:/Users/Martu Campos/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/mathpazo/fplmr.pfb><C:/Users/Martu Campos/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/Martu Campos/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/Ma
+rtu Campos/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pf
+b><C:/Users/Martu Campos/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/pala
+tino/uplri8a.pfb><C:/Users/Martu Campos/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/xypic/xyatip10.pfb><C:/Users/Martu Campos/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/xypic/xybsql10.pfb><C:/Users/Martu Campos/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/xypic/xybtip10.pfb>
+Output written on memoria.pdf (54 pages, 2460307 bytes).
+PDF statistics:
+ 362 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+
