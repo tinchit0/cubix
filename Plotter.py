@@ -2,7 +2,7 @@
 
 import sys
 import numpy as np
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtGui, QtWidgets
 from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg
 from matplotlib.figure import Figure
 import matplotlib.patches as mpatches
@@ -11,7 +11,7 @@ from matplotlib import colors as mcolors
 import mpl_toolkits.mplot3d.art3d as art3d
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 
-import cubex
+import cubix
 
 SLIDER_MAXIMUM = 100
 
@@ -36,7 +36,7 @@ class DataPlot(FigureCanvasQTAgg):
         self.fig = Figure()
         self.fig.suptitle("Data plot")
         FigureCanvasQTAgg.__init__(self, self.fig)
-        self.axes = self.fig.add_subplot(111)
+        self.axes = self.fig.gca()
         self.setParent(parent)
 
 
@@ -75,16 +75,16 @@ class PersistenceDiagramPlot(FigureCanvasQTAgg):
         self.axes.legend(handles=[mpatches.Patch(color=self.colors[dim], label='H%d' % dim) for dim in range(n)], loc=4)
 
 
-class Plotter(QtGui.QDialog):
+class Plotter(QtWidgets.QDialog):
     def __init__(self, parent=None):
-        QtGui.QWidget.__init__(self, parent)
+        QtWidgets.QWidget.__init__(self, parent)
         self.setDefault()
         self.setScreen()
         self.setFiltration()
 
     def setData(self):
         # TO DO: Data selection
-        # self.cloud = cubex.clouds.T2(N=1000, b=10)
+        # self.cloud = cubix.clouds.T2(N=1000, b=10)
         # --------------
         self.setFiltration()
         if self.cloud.dimension == 2:
@@ -101,8 +101,8 @@ class Plotter(QtGui.QDialog):
             self.cloud.kde.set_bandwidth(bw_method='scott')
         else:
             self.cloud.kde.set_bandwidth(bw_method=float(self.bandwidth_input.text()))
-        self.filtration = cubex.utils.Filtration(self.cloud, self.grid_precission, self.margin, self.pruning)
-        self.homology = cubex.utils.PersistentHomology(self.filtration)
+        self.filtration = cubix.utils.Filtration(self.cloud, self.grid_precission, self.margin, self.pruning)
+        self.homology = cubix.utils.PersistentHomology(self.filtration)
         self.setClassColors()
         self.plot()
 
@@ -136,11 +136,10 @@ class Plotter(QtGui.QDialog):
             self.plot3d()
 
     def plot2d(self):
-        self.data_plot.axes = self.data_plot.fig.add_subplot(111)
         self.data_plot.axes.clear()
         if self.show_kde_checkbox.isChecked():
             self.kde_precission = int(self.kde_precission_input.text())
-            grid = cubex.utils.Grid(self.cloud, self.kde_precission, self.margin)
+            grid = cubix.utils.Grid(self.cloud, self.kde_precission, self.margin)
             kernel = self.cloud.kde
             x, y = grid.mesh
             z = grid.evaluate(kernel)
@@ -248,7 +247,7 @@ class Plotter(QtGui.QDialog):
         self.data_plot.draw()
 
     def setDefault(self):
-        self.cloud = cubex.clouds.S1(N=1000, err=0.1)
+        self.cloud = cubix.clouds.S1(N=1000, err=0.1)
         self.grid_precission = 10
         self.kde_precission = 50
         self.margin = 0.1
@@ -259,105 +258,105 @@ class Plotter(QtGui.QDialog):
         self.resize(1087, 697)
 
         # *** OPTIONS ***
-        self.options_group = QtGui.QGroupBox(self)
-        self.options_group.setGeometry(QtCore.QRect(680, 20, 400, 340))
+        self.options_group = QtWidgets.QGroupBox(self)
+        self.options_group.setGeometry(QtCore.QRect(680, 20, 390, 340))
         self.options_group.setTitle("Options")
         # Select Data Button
-        self.select_data_group = QtGui.QGroupBox(self.options_group)
-        self.select_data_group.setGeometry(QtCore.QRect(0, 0, 400, 70))
-        self.select_data_button = QtGui.QPushButton(self.select_data_group)
-        self.select_data_button.setGeometry(QtCore.QRect(40, 30, 121, 27))
+        self.select_data_group = QtWidgets.QGroupBox(self.options_group)
+        self.select_data_group.setGeometry(QtCore.QRect(0, 0, 400, 80))
+        self.select_data_button = QtWidgets.QPushButton(self.select_data_group)
+        self.select_data_button.setGeometry(QtCore.QRect(40, 35, 121, 27))
         self.select_data_button.setText("Select Data")
         self.select_data_button.clicked.connect(self.setData)
         # Parameters
-        self.parameters_group = QtGui.QGroupBox(self.options_group)
-        self.parameters_group.setGeometry(QtCore.QRect(0, 70, 400, 140))
+        self.parameters_group = QtWidgets.QGroupBox(self.options_group)
+        self.parameters_group.setGeometry(QtCore.QRect(0, 60, 400, 150))
         # -- > Grid precission
-        self.grid_precission_label = QtGui.QLabel(self.parameters_group)
-        self.grid_precission_label.setGeometry(QtCore.QRect(20, 10, 110, 30))
+        self.grid_precission_label = QtWidgets.QLabel(self.parameters_group)
+        self.grid_precission_label.setGeometry(QtCore.QRect(20, 30, 110, 30))
         self.grid_precission_label.setText("Grid Precission:")
-        self.grid_precission_input = QtGui.QLineEdit(self.parameters_group)
-        self.grid_precission_input.setGeometry(QtCore.QRect(140, 10, 80, 27))
+        self.grid_precission_input = QtWidgets.QLineEdit(self.parameters_group)
+        self.grid_precission_input.setGeometry(QtCore.QRect(150, 30, 50, 27))
         self.grid_precission_input.setValidator(QtGui.QIntValidator(0, 10000))
         self.grid_precission_input.setText(str(self.grid_precission))
         self.grid_precission_input.editingFinished.connect(self.setFiltration)
         # --> KDE precission
-        self.kde_precission_label = QtGui.QLabel(self.parameters_group)
-        self.kde_precission_label.setGeometry(QtCore.QRect(20, 50, 110, 30))
+        self.kde_precission_label = QtWidgets.QLabel(self.parameters_group)
+        self.kde_precission_label.setGeometry(QtCore.QRect(20, 70, 110, 30))
         self.kde_precission_label.setText("KDE precission:")
-        self.kde_precission_input = QtGui.QLineEdit(self.parameters_group)
-        self.kde_precission_input.setGeometry(QtCore.QRect(140, 50, 80, 27))
+        self.kde_precission_input = QtWidgets.QLineEdit(self.parameters_group)
+        self.kde_precission_input.setGeometry(QtCore.QRect(150, 70, 50, 27))
         self.kde_precission_input.setValidator(QtGui.QIntValidator(0, 10000))
         self.kde_precission_input.setText(str(self.kde_precission))
         self.kde_precission_input.editingFinished.connect(self.plot)
         # --> Margin
-        self.margin_label = QtGui.QLabel(self.parameters_group)
-        self.margin_label.setGeometry(QtCore.QRect(240, 10, 60, 30))
+        self.margin_label = QtWidgets.QLabel(self.parameters_group)
+        self.margin_label.setGeometry(QtCore.QRect(220, 30, 110, 30))
         self.margin_label.setText("Margin:")
-        self.margin_input = QtGui.QLineEdit(self.parameters_group)
-        self.margin_input.setGeometry(QtCore.QRect(300, 10, 80, 27))
+        self.margin_input = QtWidgets.QLineEdit(self.parameters_group)
+        self.margin_input.setGeometry(QtCore.QRect(330, 30, 50, 27))
         self.margin_input.setValidator(QtGui.QDoubleValidator(0.0, 1.0, 5))
         self.margin_input.setText(str(self.margin))
         self.margin_input.editingFinished.connect(self.setFiltration)
         # --> Prune
-        self.pruning_label = QtGui.QLabel(self.parameters_group)
-        self.pruning_label.setGeometry(QtCore.QRect(240, 50, 60, 30))
+        self.pruning_label = QtWidgets.QLabel(self.parameters_group)
+        self.pruning_label.setGeometry(QtCore.QRect(220, 70, 110, 30))
         self.pruning_label.setText("Pruning:")
-        self.pruning_input = QtGui.QLineEdit(self.parameters_group)
-        self.pruning_input.setGeometry(QtCore.QRect(300, 50, 80, 27))
+        self.pruning_input = QtWidgets.QLineEdit(self.parameters_group)
+        self.pruning_input.setGeometry(QtCore.QRect(330, 70, 50, 27))
         self.pruning_input.setValidator(QtGui.QDoubleValidator(0.0, 1.0, 5))
         self.pruning_input.setText(str(self.pruning))
         self.pruning_input.editingFinished.connect(self.setFiltration)
         # --> Bandwidth
-        self.bandwidth_label = QtGui.QLabel(self.parameters_group)
-        self.bandwidth_label.setGeometry(QtCore.QRect(240, 90, 60, 30))
+        self.bandwidth_label = QtWidgets.QLabel(self.parameters_group)
+        self.bandwidth_label.setGeometry(QtCore.QRect(220, 110, 110, 30))
         self.bandwidth_label.setText("Bandwidth:")
-        self.bandwidth_input = QtGui.QLineEdit(self.parameters_group)
-        self.bandwidth_input.setGeometry(QtCore.QRect(300, 90, 80, 27))
+        self.bandwidth_input = QtWidgets.QLineEdit(self.parameters_group)
+        self.bandwidth_input.setGeometry(QtCore.QRect(330, 110, 50, 27))
         self.bandwidth_input.setValidator(QtGui.QDoubleValidator(0.0, 1.0, 5))
         self.bandwidth_input.setText(str(self.pruning))
         self.bandwidth_input.editingFinished.connect(self.setFiltration)
         # Show options
-        self.show_options_group = QtGui.QGroupBox(self.options_group)
+        self.show_options_group = QtWidgets.QGroupBox(self.options_group)
         self.show_options_group.setGeometry(QtCore.QRect(0, 190, 400, 90))
-        self.show_label = QtGui.QLabel(self.show_options_group)
-        self.show_label.setGeometry(QtCore.QRect(30, 10, 68, 17))
+        self.show_label = QtWidgets.QLabel(self.show_options_group)
+        self.show_label.setGeometry(QtCore.QRect(30, 30, 68, 17))
         self.show_label.setText("Show")
         # --> Data
-        self.show_data_checkbox = QtGui.QCheckBox(self.show_options_group)
-        self.show_data_checkbox.setGeometry(QtCore.QRect(10, 40, 70, 22))
+        self.show_data_checkbox = QtWidgets.QCheckBox(self.show_options_group)
+        self.show_data_checkbox.setGeometry(QtCore.QRect(10, 55, 70, 22))
         self.show_data_checkbox.setText("Data")
         self.show_data_checkbox.setChecked(True)
         self.show_data_checkbox.stateChanged.connect(self.plot)
         # --> KDE
-        self.show_kde_checkbox = QtGui.QCheckBox(self.show_options_group)
-        self.show_kde_checkbox.setGeometry(QtCore.QRect(80, 40, 65, 22))
+        self.show_kde_checkbox = QtWidgets.QCheckBox(self.show_options_group)
+        self.show_kde_checkbox.setGeometry(QtCore.QRect(80, 55, 65, 22))
         self.show_kde_checkbox.setText("KDE")
         self.show_kde_checkbox.stateChanged.connect(self.plot)
         # --> Grid
-        self.show_grid_checkbox = QtGui.QCheckBox(self.show_options_group)
-        self.show_grid_checkbox.setGeometry(QtCore.QRect(145, 40, 65, 22))
+        self.show_grid_checkbox = QtWidgets.QCheckBox(self.show_options_group)
+        self.show_grid_checkbox.setGeometry(QtCore.QRect(145, 55, 65, 22))
         self.show_grid_checkbox.setText("Grid")
         self.show_grid_checkbox.stateChanged.connect(self.plot)
         # --> Filtration
-        self.show_filtration_checkbox = QtGui.QCheckBox(self.show_options_group)
-        self.show_filtration_checkbox.setGeometry(QtCore.QRect(210, 40, 100, 22))
+        self.show_filtration_checkbox = QtWidgets.QCheckBox(self.show_options_group)
+        self.show_filtration_checkbox.setGeometry(QtCore.QRect(210, 55, 100, 22))
         self.show_filtration_checkbox.setText("Filtration")
         self.show_filtration_checkbox.stateChanged.connect(self.plot)
         # --> Classes
-        self.show_classes_checkbox = QtGui.QCheckBox(self.show_options_group)
-        self.show_classes_checkbox.setGeometry(QtCore.QRect(310, 40, 80, 22))
+        self.show_classes_checkbox = QtWidgets.QCheckBox(self.show_options_group)
+        self.show_classes_checkbox.setGeometry(QtCore.QRect(310, 55, 80, 22))
         self.show_classes_checkbox.setText("Classes")
         self.show_classes_checkbox.stateChanged.connect(self.plot)
         self.show_classes_checkbox.setEnabled(False)  # Not longer implemented
         # Filtration slider
-        self.filtration_group = QtGui.QGroupBox(self.options_group)
+        self.filtration_group = QtWidgets.QGroupBox(self.options_group)
         self.filtration_group.setGeometry(QtCore.QRect(0, 260, 400, 80))
-        self.filtration_label = QtGui.QLabel(self.filtration_group)
-        self.filtration_label.setGeometry(QtCore.QRect(30, 0, 71, 17))
+        self.filtration_label = QtWidgets.QLabel(self.filtration_group)
+        self.filtration_label.setGeometry(QtCore.QRect(30, 30, 71, 17))
         self.filtration_label.setText("Filtration:")
-        self.filtration_slider = QtGui.QSlider(self.filtration_group)
-        self.filtration_slider.setGeometry(QtCore.QRect(10, 20, 370, 50))
+        self.filtration_slider = QtWidgets.QSlider(self.filtration_group)
+        self.filtration_slider.setGeometry(QtCore.QRect(10, 35, 370, 50))
         self.filtration_slider.setOrientation(QtCore.Qt.Horizontal)
         self.filtration_slider.setMinimum(0)
         self.filtration_slider.setMaximum(SLIDER_MAXIMUM)
@@ -373,7 +372,7 @@ class Plotter(QtGui.QDialog):
 
 
 if __name__ == "__main__":
-        app = QtGui.QApplication(sys.argv)
+        app = QtWidgets.QApplication(sys.argv)
         plotter = Plotter()
         plotter.show()
         sys.exit(app.exec_())

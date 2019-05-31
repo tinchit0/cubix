@@ -1,3 +1,4 @@
 build/
 cubix.egg-info/
 *.pyc
+.venv

@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from itertools import combinations, product
-from sets import Set
 from time import time
 
 
@@ -252,7 +251,7 @@ class Grid():
 
     def possible_directions(self, point):
         """ Possible expanding directions of a point """
-        directions = range(self.dimension)
+        directions = list(range(self.dimension))
         for i, coordinate in enumerate(point):
             if coordinate == self.precision - 1:
                 directions.remove(i)
@@ -278,8 +277,8 @@ class HomologyClass():
     def __init__(self, homology, dimension, generators=[], representants=[]):
         self.homology = homology
         self.dimension = dimension
-        self.generators = Set(generators)
-        self.representants = Set(representants)
+        self.generators = set(generators)
+        self.representants = set(representants)
 
     def collapse(self, other):
         other.representants |= self.representants
@@ -293,11 +292,8 @@ class HomologyClass():
             if self.generators == _class.generators and _class is not self:
                 self.collapse(_class)
 
-    def __nonzero__(self):
-        if len(self.generators) == 0:
-            return False
-        else:
-            return True
+    def __bool__(self):
+        return bool(self.generators)
 
     def __add__(self, other):
         new_class = HomologyClass(self.homology, self.dimension)
@@ -410,12 +406,12 @@ class PersistentHomology():
     def detail(self):
         """ Prints persistent homology results """
         for dim in range(self.dimension):
-            print "Dimension %d:" % dim
+            print("Dimension %d:" % dim)
             if self.holes[dim]:
                 for g in self.holes[dim]:
-                    print "   %f -> %f  (%lf)" % (g.born, g.death, g.life())
+                    print("   %f -> %f  (%lf)" % (g.born, g.death, g.life()))
             else:
-                print "    No holes"
+                print("    No holes")
 
     def persistence_diagram(self, dimensions="all"):
         """ Persistence diagram plot"""

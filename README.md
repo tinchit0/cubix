@@ -23,15 +23,15 @@ import cubix
 ``` 
 The second step is choosing the data cloud to analyze. Cubix class *Cloud* is designed to contain these objects. You can create your cloud importing points from a CSV file just like: 
 ```python
-X = cubex.Cloud(csv="input_file.csv")
+X = cubix.Cloud(csv="input_file.csv")
 ``` 
 If you have your *N* points of **R**^n stored in a numpy array (let's call it *array*) with shape *n x N* you can make a *Cloud* with them with:
 ```python
-X = cubex.Cloud(data=array)
+X = cubix.Cloud(data=array)
 ``` 
 Alternatively, Cubix has methods to generate random data clouds with some particular shapes: the spheres *S⁰* (in **R**), *S¹* (in **R**²) and *S²* (in **R**³) , the torus *T²* (in **R**³), the real projective spaces **RP**² (in **R**⁴), and de wedge sum of two spheres *S¹vS¹* (in  **R**²). These are subclasses of *Cloud* so you can easily instantiate a 2000-point cloud with *S²* shape like:
 ```python
-X = cubex.S2(center=(2,1,4), r=5, err=0.1, N=2000)
+X = cubix.S2(center=(2,1,4), r=5, err=0.1, N=2000)
 ``` 
 For more information about the arguments accepted to instantiate this classes, please read the documentation of each one.
 

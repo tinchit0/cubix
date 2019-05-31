@@ -95,7 +95,7 @@ class Cloud():
                 ax.plot([xb], [yb], [zb], 'w')
             plt.show()
         else:
-            print "You'll have to imagine it"
+            print("You'll have to imagine it")
 
     def kde_plot(self, precision=50, margin=0.5):
         """ Plots (when possible) the KDE of the cloud """
@@ -111,7 +111,7 @@ class Cloud():
             plt.pcolor(x, y, z, cmap='RdPu', vmin=0)
             plt.show()
         else:
-            print "Can't do this"
+            print("Can't do this")
 
     def export_to_csv(self, file):
         """ Exports data points to the path given in format CSV """
