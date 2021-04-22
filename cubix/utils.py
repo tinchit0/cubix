@@ -221,7 +221,7 @@ class Grid():
         self.dimension = cloud.dimension
         self.precision = precision
         self.size = []
-        mounting = []
+        self.mounting = []
         for row in cloud.data:
             m = row.min()
             M = row.max()
@@ -230,8 +230,8 @@ class Grid():
                 m -= L * margin
                 M += L * margin
             self.size.append((m, M))
-            mounting.append(np.linspace(m, M, num=precision))
-        self.mesh = np.meshgrid(*mounting)
+            self.mounting.append(np.linspace(m, M, num=self.precision))
+        self.mesh = np.meshgrid(*self.mounting)
 
     @property
     def epsilon(self):
@@ -444,7 +444,11 @@ class PersistentHomology():
             for hclass in self.holes[dim]:
                 x = [hclass.born, hclass.born]
                 y = [hclass.born, hclass.death]
-                plt.plot(x, y, linewidth=2.0,
+                plt.plot([hclass.born, hclass.born], [hclass.born, hclass.death],
+                         linewidth=2.0,
+                         color=CLASSES_COLORS[dim % MAX_COLORS])
+                plt.plot([hclass.born, hclass.death], [hclass.death, hclass.death],
+                         linewidth=0.5, linestyle="dashed",
                          color=CLASSES_COLORS[dim % MAX_COLORS])
             handles.append(mpatches.Patch(color=CLASSES_COLORS[
                            dim % MAX_COLORS], label='H%d' % dim))

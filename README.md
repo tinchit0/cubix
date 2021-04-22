@@ -2,14 +2,6 @@
 
 Cubix is a simple, 100% python written, module for computing persistent homology in alternative way. Given a data cloud *S* of **R**^n, it builds a simplicial cubic complex covering *S* and makes a filtration over this complex using a kernel density estimator (KDE) of *S*.  For a formal definition of the method and the simplicial cubic homology implemented, we redirect the reader to the paper 'Filtraciones en homología persistente mediante estimadores kernel de densidad' ---writen in Spanish--- available on the Github repository.
 
-## Dependencies
-Cubix has very few dependences:
-* [numpy](https://pypi.org/project/numpy/) for numerical treatment
-* [scipy](https://pypi.org/project/scipy/) as it uses *scipy.stats.gaussian_kde()* as kernel function
-* [matplotlib](https://pypi.org/project/matplotlib/) for plotting
-
-All of them are available in PyPI.
-
 ## Install
 You can easily install Cubix via *pip*:
 ```
@@ -60,15 +52,6 @@ h.detail()
 ```
 
 For more information, please check the documentation in the source code.
-
-
-## Plotter.py
-
-*Plotter.py* is a user-friednly desktop program (developed with PyQt) designed for experimenting with *Cubix* options on 2D or 3D data clouds. You can run it just typing
-```bash
-./Plotter.py
-```
-in any Unix-like computer with *Cubix* installed. Extra dependences may be required (such as PyQt).
 
 
 *This software has been developed as part of the Final Degree Project in Mathematics for Universitat Autònoma de Barcelona (UAB). If you are interested in filtrations using KDE's and you understand Spanish, please take a look at the paper 'Filtraciones en homología persistente mediante estimadores kernel de densidad' available on the Github repository.*

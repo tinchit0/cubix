@@ -108,7 +108,7 @@ class Cloud():
         elif self.dimension == 2:
             x, y = grid.mesh
             z = grid.evaluate(self.kde)
-            plt.pcolor(x, y, z, cmap='RdPu', vmin=0)
+            plt.pcolor(x, y, z, cmap='RdPu', shading="auto", vmin=0)
             plt.show()
         else:
             print("Can't do this")
@@ -137,9 +137,12 @@ class S0(Cloud):
     N        --- Number of points
     """
 
-    def __init__(self, r=1, err=0, N=1000):
+    def __init__(self, r=1, err=0, N=1000, seed=42):
         self.radius = r
         self.error = err
+        self.seed = seed
+
+        np.random.seed(seed)
 
         x = r * (2 * np.random.randint(2, size=N) - 1) + \
             np.random.normal(0, err, N)
@@ -158,10 +161,13 @@ class S1(Cloud):
     N        --- Number of points
     """
 
-    def __init__(self, center=(0, 0), r=1, err=0, N=1000):
+    def __init__(self, center=(0, 0), r=1, err=0, N=1000, seed=42):
         self.center = center
         self.radius = r
         self.error = err
+        self.seed = seed
+
+        np.random.seed(seed)
 
         a, b = center
         t = np.random.uniform(0, 2 * np.pi, N)
@@ -182,10 +188,13 @@ class S2(Cloud):
     N        --- Number of points
     """
 
-    def __init__(self, center=(0, 0, 0), r=1, err=0, N=1000):
+    def __init__(self, center=(0, 0, 0), r=1, err=0, N=1000, seed=42):
         self.center = center
         self.radius = r
         self.error = err
+        self.seed = seed
+
+        np.random.seed(seed)
 
         a, b, c = center
         u = np.random.random(N)
@@ -210,10 +219,13 @@ class T2(Cloud):
     N        --- Number of points
     """
 
-    def __init__(self, a=1, b=2, err=0, N=1000):
+    def __init__(self, a=1, b=2, err=0, N=1000, seed=42):
         self.radius_int = a
         self.radius_ext = b
         self.error = err
+        self.seed = seed
+
+        np.random.seed(seed)
 
         x, y, z = [], [], []
         cont = 0
@@ -248,8 +260,11 @@ class RP2(Cloud):
     N        --- Number of points
     """
 
-    def __init__(self, err=0, N=1000):
+    def __init__(self, err=0, N=1000, seed=42):
         self.error = err
+        self.seed = seed
+
+        np.random.seed(seed)
 
         u = np.random.random(N)
         v = np.random.random(N)
@@ -276,11 +291,14 @@ class S1vS1(Cloud):
     N        --- Number of points
     """
 
-    def __init__(self, r=1, err=0, N=1000):
+    def __init__(self, r=1, err=0, N=1000, seed=42):
         self.radius = r
         self.error = err
+        self.seed = seed
 
-        up = S1(center=(0, r), r=1, err=err, N=N / 2)
-        down = S1(center=(0, -r), r=1, err=err, N=N / 2)
+        np.random.seed(seed)
+
+        up = S1(center=(0, r), r=1, err=err, N=N // 2)
+        down = S1(center=(0, -r), r=1, err=err, N=N // 2)
         data = np.hstack((up.data, down.data))
         Cloud.__init__(self, data=data)

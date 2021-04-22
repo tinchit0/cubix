@@ -1,4 +1,6 @@
 build/
+research/
+__pycache__
 cubix.egg-info/
 *.pyc
 .venv
