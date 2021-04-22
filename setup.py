@@ -1,8 +1,9 @@
+from distutils.core import setup
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-setuptools.setup(
+setup(
     name="cubix",
     version="1.0.4",
     author="Martin Campos",
