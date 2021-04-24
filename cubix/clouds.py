@@ -17,7 +17,7 @@ class Cloud():
     csv      --- Relative path to a CSV file containing points
     """
 
-    def __init__(self, data=None, csv=None):
+    def __init__(self, data=None, csv=None, bw_method=None):
         if (data is not None and csv is not None) \
            or (data is None and csv is None):
             raise ValueError(
@@ -30,7 +30,7 @@ class Cloud():
             self.data = np.array(
                 [[float(x) for x in row.split(";")] for row in rows])
         self.dimension, self.N = self.data.shape
-        self.kde = stats.gaussian_kde(self.data)
+        self.kde = stats.gaussian_kde(self.data, bw_method=bw_method)
 
     def size(self):
         """ Returns 2-tuples with min and max of data in each direction """
