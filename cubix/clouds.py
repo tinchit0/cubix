@@ -137,7 +137,7 @@ class S0(Cloud):
     N        --- Number of points
     """
 
-    def __init__(self, r=1, err=0, N=1000, seed=42):
+    def __init__(self, r=1, err=0, N=1000, seed=42, **kwargs):
         self.radius = r
         self.error = err
         self.seed = seed
@@ -147,7 +147,7 @@ class S0(Cloud):
         x = r * (2 * np.random.randint(2, size=N) - 1) + \
             np.random.normal(0, err, N)
         data = np.array([x])
-        Cloud.__init__(self, data=data)
+        Cloud.__init__(self, data=data, **kwargs)
 
 
 class S1(Cloud):
@@ -161,7 +161,7 @@ class S1(Cloud):
     N        --- Number of points
     """
 
-    def __init__(self, center=(0, 0), r=1, err=0, N=1000, seed=42):
+    def __init__(self, center=(0, 0), r=1, err=0, N=1000, seed=42, **kwargs):
         self.center = center
         self.radius = r
         self.error = err
@@ -174,7 +174,7 @@ class S1(Cloud):
         x = a + r * np.cos(t) + np.random.normal(0, err, N)
         y = b + r * np.sin(t) + np.random.normal(0, err, N)
         data = np.vstack((x, y))
-        Cloud.__init__(self, data=data)
+        Cloud.__init__(self, data=data, **kwargs)
 
 
 class S2(Cloud):
@@ -188,7 +188,7 @@ class S2(Cloud):
     N        --- Number of points
     """
 
-    def __init__(self, center=(0, 0, 0), r=1, err=0, N=1000, seed=42):
+    def __init__(self, center=(0, 0, 0), r=1, err=0, N=1000, seed=42, **kwargs):
         self.center = center
         self.radius = r
         self.error = err
@@ -205,7 +205,7 @@ class S2(Cloud):
         y = r * np.sin(theta) * np.sin(phi) + np.random.normal(0, err, N)
         z = r * np.cos(theta) + np.random.normal(0, err, N)
         data = np.vstack((x, y, z))
-        Cloud.__init__(self, data=data)
+        Cloud.__init__(self, data=data, **kwargs)
 
 
 class T2(Cloud):
@@ -219,7 +219,7 @@ class T2(Cloud):
     N        --- Number of points
     """
 
-    def __init__(self, a=1, b=2, err=0, N=1000, seed=42):
+    def __init__(self, a=1, b=2, err=0, N=1000, seed=42, **kwargs):
         self.radius_int = a
         self.radius_ext = b
         self.error = err
@@ -247,7 +247,7 @@ class T2(Cloud):
                 cont += 1
 
         data = np.array([x, y, z])
-        Cloud.__init__(self, data=data)
+        Cloud.__init__(self, data=data, **kwargs)
 
 
 class RP2(Cloud):
@@ -260,7 +260,7 @@ class RP2(Cloud):
     N        --- Number of points
     """
 
-    def __init__(self, err=0, N=1000, seed=42):
+    def __init__(self, err=0, N=1000, seed=42, **kwargs):
         self.error = err
         self.seed = seed
 
@@ -278,7 +278,7 @@ class RP2(Cloud):
         z = a * c + np.random.normal(0, err, N)
         t = a**2 - b**2 + np.random.normal(0, err, N)
         data = np.vstack((x, y, z, t))
-        Cloud.__init__(self, data=data)
+        Cloud.__init__(self, data=data, **kwargs)
 
 
 class S1vS1(Cloud):
@@ -291,7 +291,7 @@ class S1vS1(Cloud):
     N        --- Number of points
     """
 
-    def __init__(self, r=1, err=0, N=1000, seed=42):
+    def __init__(self, r=1, err=0, N=1000, seed=42, **kwargs):
         self.radius = r
         self.error = err
         self.seed = seed
@@ -301,4 +301,4 @@ class S1vS1(Cloud):
         up = S1(center=(0, r), r=1, err=err, N=N // 2)
         down = S1(center=(0, -r), r=1, err=err, N=N // 2)
         data = np.hstack((up.data, down.data))
-        Cloud.__init__(self, data=data)
+        Cloud.__init__(self, data=data, **kwargs)

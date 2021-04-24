@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="cubix",
-    version="1.0.4",
+    version="1.0.6",
     author="Martin Campos",
     author_email="tinotinocampos@gmail.com",
     description="Persistent homology for data clouds using KDE",
