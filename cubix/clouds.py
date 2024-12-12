@@ -1,14 +1,14 @@
 import sys
 from time import time
+
+import matplotlib.pyplot as plt
 import numpy as np
 from scipy import stats
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 
 from .utils import Filtration, Grid, PersistentHomology
 
 
-class Cloud():
+class Cloud:
     """
     Data cloud of points in R^n
 
@@ -18,35 +18,29 @@ class Cloud():
     """
 
     def __init__(self, data=None, csv=None, bw_method=None):
-        if (data is not None and csv is not None) \
-           or (data is None and csv is None):
-            raise ValueError(
-                "You should instanciate with either data or CSV file")
+        if (data is not None and csv is not None) or (data is None and csv is None):
+            raise ValueError("You should instanciate with either data or CSV file")
         if data is not None:
             self.data = data
         if csv is not None:
-            f = open(csv, 'r')
-            rows = f.readlines()
-            self.data = np.array(
-                [[float(x) for x in row.split(";")] for row in rows])
+            self.data = np.genfromtxt(csv, delimiter=",")
         self.dimension, self.N = self.data.shape
         self.kde = stats.gaussian_kde(self.data, bw_method=bw_method)
 
     def size(self):
-        """ Returns 2-tuples with min and max of data in each direction """
+        """Returns 2-tuples with min and max of data in each direction"""
         return [(row.min(), row.max()) for row in self.data]
 
     def grid(self, m, margin=0):
-        """ Creates a grid of equidistant m^n points covering the data """
+        """Creates a grid of equidistant m^n points covering the data"""
         return Grid(self, m, margin)
 
     def filtration(self, m, margin=0, pruning=0, verbose=False):
-        """ Creates a filtration using cloud's KDE """
-        return Filtration(self, m, margin=margin, pruning=pruning,
-                          verbose=verbose)
+        """Creates a filtration using cloud's KDE"""
+        return Filtration(self, m, margin=margin, pruning=pruning, verbose=verbose)
 
     def persistent_homology(self, n=10, margin=0.1, pruning=0, verbose=False):
-        """ Calculates persistent homology of cubical filtration using KDE """
+        """Calculates persistent homology of cubical filtration using KDE"""
         if not verbose:
             filtration = Filtration(self, n, margin=margin)
             return PersistentHomology(filtration)
@@ -56,7 +50,8 @@ class Cloud():
             t = time()
             sys.stderr.write("Building filtration... \n")
             filtration = Filtration(
-                self, n, margin=margin, pruning=pruning, verbose=True)
+                self, n, margin=margin, pruning=pruning, verbose=True
+            )
             sys.stderr.write("Done! (%f s)\n" % (time() - t))
 
             t = time()
@@ -67,61 +62,60 @@ class Cloud():
             sys.stderr.write("Total time: %f s\n" % (time() - t0))
             return persistent_homology
 
-    def plot(self):
-        """ Plots (when possible) points of de cloud """
+    def plot(self, **kwargs):
+        """Plots (when possible) points of de cloud"""
         if self.dimension == 1:
             data2D = np.vstack((self.data, np.zeros(self.N)))
-            plt.scatter(*data2D)
+            plt.scatter(*data2D, **kwargs)
             plt.show()
         elif self.dimension == 2:
-            plt.scatter(*self.data)
-            plt.axis('equal')
+            plt.scatter(*self.data, **kwargs)
+            plt.axis("equal")
             plt.show()
         elif self.dimension == 3:
-            data = self.data
             fig = plt.figure()
-            ax = fig.add_subplot(111, projection='3d')
-            ax.scatter(*self.data)
+            ax = fig.add_subplot(111, projection="3d")
+            ax.scatter(*self.data, **kwargs)
             # Make equal axis with a fake bounding box
             max_range = max([M - m for m, M in self.size()])
             average = [0.5 * (m + M) for m, M in self.size()]
-            Xb = 0.5 * max_range * \
-                np.mgrid[-1:2:2, -1:2:2, -1:2:2][0].flatten() + average[0]
-            Yb = 0.5 * max_range * \
-                np.mgrid[-1:2:2, -1:2:2, -1:2:2][1].flatten() + average[1]
-            Zb = 0.5 * max_range * \
-                np.mgrid[-1:2:2, -1:2:2, -1:2:2][2].flatten() + average[2]
+            Xb = (
+                0.5 * max_range * np.mgrid[-1:2:2, -1:2:2, -1:2:2][0].flatten()
+                + average[0]
+            )
+            Yb = (
+                0.5 * max_range * np.mgrid[-1:2:2, -1:2:2, -1:2:2][1].flatten()
+                + average[1]
+            )
+            Zb = (
+                0.5 * max_range * np.mgrid[-1:2:2, -1:2:2, -1:2:2][2].flatten()
+                + average[2]
+            )
             for xb, yb, zb in zip(Xb, Yb, Zb):
-                ax.plot([xb], [yb], [zb], 'w')
+                ax.plot([xb], [yb], [zb], "w")
             plt.show()
         else:
             print("You'll have to imagine it")
 
     def kde_plot(self, precision=50, margin=0.5):
-        """ Plots (when possible) the KDE of the cloud """
+        """Plots (when possible) the KDE of the cloud"""
         grid = Grid(self, precision, margin)
         if self.dimension == 1:
-            x, = grid.mesh
+            (x,) = grid.mesh
             y = grid.evaluate(self.kde)
             plt.plot(x, y)
             plt.show()
         elif self.dimension == 2:
             x, y = grid.mesh
             z = grid.evaluate(self.kde)
-            plt.pcolor(x, y, z, cmap='RdPu', shading="auto", vmin=0)
+            plt.pcolor(x, y, z, cmap="RdPu", shading="auto", vmin=0)
             plt.show()
         else:
             print("Can't do this")
 
     def export_to_csv(self, file):
-        """ Exports data points to the path given in format CSV """
-        try:
-            f = open(file, 'r+')
-        except IOError:
-            f = open(file, 'w')
-        for row in self.data:
-            f.write(";".join(str(x) for x in row) + '\n')
-        f.close()
+        """Exports data points to the path given in format CSV"""
+        return np.savetxt(file, self.data, delimiter=",")
 
     def __repr__(self):
         return "<Data cloud of R^%d with %d points>" % (self.dimension, self.N)
@@ -144,8 +138,7 @@ class S0(Cloud):
 
         np.random.seed(seed)
 
-        x = r * (2 * np.random.randint(2, size=N) - 1) + \
-            np.random.normal(0, err, N)
+        x = r * (2 * np.random.randint(2, size=N) - 1) + np.random.normal(0, err, N)
         data = np.array([x])
         Cloud.__init__(self, data=data, **kwargs)
 
@@ -239,10 +232,12 @@ class T2(Cloud):
             if w > (b + a * np.cos(theta)) / (a + b):
                 continue
             else:
-                z.append(np.cos(phi) * (b + a * np.cos(theta)) +
-                         np.random.normal(0, err))
-                x.append(np.sin(phi) * (b + a * np.cos(theta)) +
-                         np.random.normal(0, err))
+                z.append(
+                    np.cos(phi) * (b + a * np.cos(theta)) + np.random.normal(0, err)
+                )
+                x.append(
+                    np.sin(phi) * (b + a * np.cos(theta)) + np.random.normal(0, err)
+                )
                 y.append(a * np.sin(theta) + np.random.normal(0, err))
                 cont += 1
 
@@ -301,4 +296,5 @@ class S1vS1(Cloud):
         up = S1(center=(0, r), r=1, err=err, N=N // 2)
         down = S1(center=(0, -r), r=1, err=err, N=N // 2)
         data = np.hstack((up.data, down.data))
+        Cloud.__init__(self, data=data, **kwargs)
         Cloud.__init__(self, data=data, **kwargs)

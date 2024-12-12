@@ -1,31 +1,25 @@
-#!/usr/bin/env python
-
-import sys
-import numpy as np
-from PyQt5 import QtCore, QtGui, QtWidgets
-from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg
-from matplotlib.figure import Figure
 import matplotlib.patches as mpatches
+import numpy as np
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg
+from matplotlib.figure import Figure
 from matplotlib.patches import Rectangle
-from matplotlib import colors as mcolors
-import mpl_toolkits.mplot3d.art3d as art3d
-from mpl_toolkits.mplot3d.art3d import Poly3DCollection
+from PyQt5 import QtCore, QtGui, QtWidgets
 
 import cubix
 
 SLIDER_MAXIMUM = 100
 
 CLASSES_COLORS = {
-    0: 'red',
-    1: 'green',
-    2: 'fuchsia',
-    3: 'blue',
-    4: 'turquoise',
-    5: 'lime',
-    6: 'purple',
-    7: 'gold',
-    8: 'brown',
-    9: 'navy',
+    0: "red",
+    1: "green",
+    2: "fuchsia",
+    3: "blue",
+    4: "turquoise",
+    5: "lime",
+    6: "purple",
+    7: "gold",
+    8: "brown",
+    9: "navy",
 }
 
 MAX_COLORS = len(CLASSES_COLORS)
@@ -53,29 +47,30 @@ class PersistenceDiagramPlot(FigureCanvasQTAgg):
 
     @property
     def colors(self):
-        return {
-            0: 'blue',
-            1: 'green',
-            2: 'orange',
-            3: 'red'
-        }
+        return {0: "blue", 1: "green", 2: "orange", 3: "red"}
 
     def compute_initial_figure(self):
-        self.axes.plot((0, 1), (0, 1), color='gray')
+        self.axes.plot((0, 1), (0, 1), color="gray")
 
     def bars(self, n):
-        self.axes.plot((n, n), (0, n), color='red')
-        self.axes.plot((0, n), (n, n), color='red')
+        self.axes.plot((n, n), (0, n), color="red")
+        self.axes.plot((0, n), (n, n), color="red")
 
     def set_lims(self):
         self.axes.set_xlim([-0.05, 1.05])
         self.axes.set_ylim([-0.05, 1.05])
 
     def set_legend(self, n):
-        self.axes.legend(handles=[mpatches.Patch(color=self.colors[dim], label='H%d' % dim) for dim in range(n)], loc=4)
+        self.axes.legend(
+            handles=[
+                mpatches.Patch(color=self.colors[dim], label="H%d" % dim)
+                for dim in range(n)
+            ],
+            loc=4,
+        )
 
 
-class Plotter(QtWidgets.QDialog):
+class Playground(QtWidgets.QDialog):
     def __init__(self, parent=None):
         QtWidgets.QWidget.__init__(self, parent)
         self.setDefault()
@@ -98,10 +93,12 @@ class Plotter(QtWidgets.QDialog):
         self.margin = float(self.margin_input.text())
         self.pruning = float(self.pruning_input.text())
         if float(self.bandwidth_input.text()) == 0:
-            self.cloud.kde.set_bandwidth(bw_method='scott')
+            self.cloud.kde.set_bandwidth(bw_method="scott")
         else:
             self.cloud.kde.set_bandwidth(bw_method=float(self.bandwidth_input.text()))
-        self.filtration = cubix.utils.Filtration(self.cloud, self.grid_precission, self.margin, self.pruning)
+        self.filtration = cubix.utils.Filtration(
+            self.cloud, self.grid_precission, self.margin, self.pruning
+        )
         self.homology = cubix.utils.PersistentHomology(self.filtration)
         self.setClassColors()
         self.plot()
@@ -115,7 +112,7 @@ class Plotter(QtWidgets.QDialog):
     def plot(self):
         # Persistence diagram
         self.persistence_diagram.axes.clear()
-        n = self.filtration_slider.value()/float(SLIDER_MAXIMUM)
+        n = self.filtration_slider.value() / float(SLIDER_MAXIMUM)
         self.persistence_diagram.compute_initial_figure()
         for dim in range(self.cloud.dimension + 1):
             for hclass in self.homology.holes[dim]:
@@ -123,7 +120,9 @@ class Plotter(QtWidgets.QDialog):
                     continue
                 x = [hclass.born, hclass.born]
                 y = [hclass.born, min(hclass.death, n)]
-                self.persistence_diagram.axes.plot(x, y, linewidth=2.0, color=self.persistence_diagram.colors[dim])
+                self.persistence_diagram.axes.plot(
+                    x, y, linewidth=2.0, color=self.persistence_diagram.colors[dim]
+                )
         self.persistence_diagram.bars(n)
         self.persistence_diagram.set_lims()
         self.persistence_diagram.set_legend(self.cloud.dimension)
@@ -143,32 +142,41 @@ class Plotter(QtWidgets.QDialog):
             kernel = self.cloud.kde
             x, y = grid.mesh
             z = grid.evaluate(kernel)
-            self.data_plot.axes.pcolor(x, y, z, cmap='RdPu', vmin=0)
+            self.data_plot.axes.pcolor(x, y, z, cmap="RdPu", vmin=0)
         if self.show_data_checkbox.isChecked():
             x, y = self.cloud.data
-            self.data_plot.axes.scatter(x, y, color='black')
+            self.data_plot.axes.scatter(x, y, color="black")
         if self.show_grid_checkbox.isChecked():
             x, y = self.filtration.grid.mesh
-            self.data_plot.axes.scatter(x, y, marker='x', alpha=0.5, color='gray')
+            self.data_plot.axes.scatter(x, y, marker="x", alpha=0.5, color="gray")
             # for cube in self.filtration[1]:
             #     if cube.dimension == 0:
             #         x, y = self.filtration.grid[cube.root]
             #         self.data_plot.axes.plot(x, y, 'ro', color='blue', alpha=(1-cube.value)**2)
             #         self.data_plot.axes.plot(x, y, 'ro', color='gray')
         if self.show_filtration_checkbox.isChecked():
-            n = self.filtration_slider.value()/float(SLIDER_MAXIMUM)
+            n = self.filtration_slider.value() / float(SLIDER_MAXIMUM)
             for cube in self.filtration[n]:
                 if cube.dimension == 0:
                     x, y = self.filtration.grid[cube.root]
-                    self.data_plot.axes.plot(x, y, 'ro', color='gray')
+                    self.data_plot.axes.plot(x, y, "ro", color="gray")
                 if cube.dimension == 1:
                     x1, y1 = self.filtration.grid[cube.points[0]]
                     x2, y2 = self.filtration.grid[cube.points[1]]
-                    self.data_plot.axes.plot([x1, x2], [y1, y2], color='gray')
+                    self.data_plot.axes.plot([x1, x2], [y1, y2], color="gray")
                 if cube.dimension == 2:
                     x1, y1 = self.filtration.grid[cube.points[0]]
                     x2, y2 = self.filtration.grid[cube.points[3]]
-                    self.data_plot.axes.add_patch(Rectangle((x1, y1), x2-x1, y2-y1, hatch='//', fill=False, color='gray'))
+                    self.data_plot.axes.add_patch(
+                        Rectangle(
+                            (x1, y1),
+                            x2 - x1,
+                            y2 - y1,
+                            hatch="//",
+                            fill=False,
+                            color="gray",
+                        )
+                    )
         # xlim, ylim = self.filtration.grid.size
         # self.data_plot.axes.set_xlim(xlim)
         # self.data_plot.axes.set_ylim(ylim)
@@ -176,37 +184,43 @@ class Plotter(QtWidgets.QDialog):
 
         # Make equal axis with a fake bounding box
         max_range = max([M - m for m, M in self.filtration.grid.size])
-        average = [0.5*(m+M) for m, M in self.filtration.grid.size]
-        Xb = 0.5*max_range*np.mgrid[-1:2:2, -1:2:2, -1:2:2][0].flatten() + average[0]
-        Yb = 0.5*max_range*np.mgrid[-1:2:2, -1:2:2, -1:2:2][1].flatten() + average[1]
+        average = [0.5 * (m + M) for m, M in self.filtration.grid.size]
+        Xb = (
+            0.5 * max_range * np.mgrid[-1:2:2, -1:2:2, -1:2:2][0].flatten() + average[0]
+        )
+        Yb = (
+            0.5 * max_range * np.mgrid[-1:2:2, -1:2:2, -1:2:2][1].flatten() + average[1]
+        )
         for xb, yb in zip(Xb, Yb):
-            self.data_plot.axes.plot([xb], [yb], 'w')
+            self.data_plot.axes.plot([xb], [yb], "w")
 
         self.data_plot.draw()
 
     def plot3d(self):
-        self.data_plot.axes = self.data_plot.fig.add_subplot(111, projection='3d')
+        self.data_plot.axes = self.data_plot.fig.add_subplot(111, projection="3d")
         self.data_plot.axes.clear()
         if self.show_data_checkbox.isChecked():
             x, y, z = self.cloud.data
-            self.data_plot.axes.scatter(x, y, z, c='black')
+            self.data_plot.axes.scatter(x, y, z, c="black")
         if self.show_grid_checkbox.isChecked():
             # x, y, z = self.filtration.grid.mesh
             # self.data_plot.axes.scatter(x, y, z, marker='x', alpha=0.5, c='gray')
             for cube in self.filtration[1]:
                 if cube.dimension == 0:
                     x, y, z = self.filtration.grid[cube.root]
-                    self.data_plot.axes.plot([x], [y],[z], 'ro', c='blue', alpha=(1-cube.value)**2)
+                    self.data_plot.axes.plot(
+                        [x], [y], [z], "ro", c="blue", alpha=(1 - cube.value) ** 2
+                    )
         if self.show_filtration_checkbox.isChecked():
-            n = self.filtration_slider.value()/float(SLIDER_MAXIMUM)
+            n = self.filtration_slider.value() / float(SLIDER_MAXIMUM)
             for cube in self.filtration[n]:
                 if cube.dimension == 0:
                     x, y, z = self.filtration.grid[cube.root]
-                    self.data_plot.axes.plot([x], [y], [z], 'ro', c='gray')
+                    self.data_plot.axes.plot([x], [y], [z], "ro", c="gray")
                 if cube.dimension == 1:
                     x1, y1, z1 = self.filtration.grid[cube.points[0]]
                     x2, y2, z2 = self.filtration.grid[cube.points[1]]
-                    self.data_plot.axes.plot([x1, x2], [y1, y2], [z1, z2], color='gray')
+                    self.data_plot.axes.plot([x1, x2], [y1, y2], [z1, z2], color="gray")
                 # if cube.dimension == 2:
                 #     x1, y1, z1 = self.filtration.grid[cube.points[0]]
                 #     x2, y2, z2 = self.filtration.grid[cube.points[3]]
@@ -238,12 +252,18 @@ class Plotter(QtWidgets.QDialog):
         self.data_plot.axes.set_zlabel("z")
         # Make equal axis with a fake bounding box
         max_range = max([M - m for m, M in self.filtration.grid.size])
-        average = [0.5*(m+M) for m, M in self.filtration.grid.size]
-        Xb = 0.5*max_range*np.mgrid[-1:2:2, -1:2:2, -1:2:2][0].flatten() + average[0]
-        Yb = 0.5*max_range*np.mgrid[-1:2:2, -1:2:2, -1:2:2][1].flatten() + average[1]
-        Zb = 0.5*max_range*np.mgrid[-1:2:2, -1:2:2, -1:2:2][2].flatten() + average[2]
+        average = [0.5 * (m + M) for m, M in self.filtration.grid.size]
+        Xb = (
+            0.5 * max_range * np.mgrid[-1:2:2, -1:2:2, -1:2:2][0].flatten() + average[0]
+        )
+        Yb = (
+            0.5 * max_range * np.mgrid[-1:2:2, -1:2:2, -1:2:2][1].flatten() + average[1]
+        )
+        Zb = (
+            0.5 * max_range * np.mgrid[-1:2:2, -1:2:2, -1:2:2][2].flatten() + average[2]
+        )
         for xb, yb, zb in zip(Xb, Yb, Zb):
-            self.data_plot.axes.plot([xb], [yb], [zb], 'w')
+            self.data_plot.axes.plot([xb], [yb], [zb], "w")
         self.data_plot.draw()
 
     def setDefault(self):
@@ -369,10 +389,3 @@ class Plotter(QtWidgets.QDialog):
         # Persistence diagram
         self.persistence_diagram = PersistenceDiagramPlot(self)
         self.persistence_diagram.setGeometry(QtCore.QRect(680, 370, 390, 310))
-
-
-if __name__ == "__main__":
-        app = QtWidgets.QApplication(sys.argv)
-        plotter = Plotter()
-        plotter.show()
-        sys.exit(app.exec_())
