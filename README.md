@@ -57,7 +57,7 @@ h.detail()
 ```
 
 ## Playground
-You can also try the playground application, based on PyQt5. For that, install gui extra:
+You can also try the playground application, based on PyQt5. For that, install `gui` extra:
 ```
 pip install cubix[gui]
 ```

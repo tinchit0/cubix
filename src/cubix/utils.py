@@ -119,7 +119,7 @@ class Filtration:
     verbose     -- Print the bulding process
     """
 
-    def __init__(self, cloud, precision, margin=0, pruning=0, verbose=False):
+    def __init__(self, cloud, precision, margin=0.0, pruning=0, verbose=False):
         self.cloud = cloud
         self.dimension = cloud.dimension
         self.precision = precision
@@ -221,7 +221,7 @@ class Grid:
                    10% bigger than the space occupied by the data cloud
     """
 
-    def __init__(self, cloud, precision, margin=0):
+    def __init__(self, cloud, precision, margin=0.0):
         self.dimension = cloud.dimension
         self.precision = precision
         self.size = []

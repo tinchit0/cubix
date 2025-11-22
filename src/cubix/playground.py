@@ -1,6 +1,7 @@
+import sys
 import matplotlib.patches as mpatches
 import numpy as np
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg
+from matplotlib.backends.backend_qtagg import FigureCanvasQTAgg
 from matplotlib.figure import Figure
 from matplotlib.patches import Rectangle
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -389,3 +390,9 @@ class Playground(QtWidgets.QDialog):
         # Persistence diagram
         self.persistence_diagram = PersistenceDiagramPlot(self)
         self.persistence_diagram.setGeometry(QtCore.QRect(680, 370, 390, 310))
+
+def run_app():
+    app = QtWidgets.QApplication(sys.argv)
+    plotter = Playground()
+    plotter.show()
+    sys.exit(app.exec_())
